@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-06-12",
+  "passed": true,
+  "total_checks": 47,
+  "passed_checks": 47,
+  "failed_checks": 0,
+  "section_status": {
+    "Step 1 - Unit Agents": true,
+    "Step 10 - Foundry IQ Simulation": true,
+    "Step 11 - Safety Compliance": true,
+    "Step 12 - End-to-End": true,
+    "Step 2 - Personalization": true,
+    "Step 3 - Adaptive Logic": true,
+    "Step 4 - Study Plan Variation": true,
+    "Step 5 - Risk Intelligence": true,
+    "Step 6 - Reasoning Trace": true,
+    "Step 7 - Counterfactual": true,
+    "Step 8 - Critic Agent": true,
+    "Step 9 - Evaluation System": true
+  },
+  "checks": [
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "normal agent execution",
+      "passed": true,
+      "detail": "All agents returned dictionaries without exceptions"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "weak agent execution",
+      "passed": true,
+      "detail": "All agents returned dictionaries without exceptions"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "high agent execution",
+      "passed": true,
+      "detail": "All agents returned dictionaries without exceptions"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "edge agent execution",
+      "passed": true,
+      "detail": "All agents returned dictionaries without exceptions"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "weakness_analyzer output adapts across cases",
+      "passed": true,
+      "detail": "3 unique output variant(s) across normal/weak/high"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "study_planner output adapts across cases",
+      "passed": true,
+      "detail": "3 unique output variant(s) across normal/weak/high"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "risk_predictor output adapts across cases",
+      "passed": true,
+      "detail": "3 unique output variant(s) across normal/weak/high"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "resource_finder output adapts across cases",
+      "passed": true,
+      "detail": "3 unique output variant(s) across normal/weak/high"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "career_readiness output adapts across cases",
+      "passed": true,
+      "detail": "3 unique output variant(s) across normal/weak/high"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "counterfactual_reasoner output adapts across cases",
+      "passed": true,
+      "detail": "3 unique output variant(s) across normal/weak/high"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "critic_agent output adapts across cases",
+      "passed": true,
+      "detail": "3 unique output variant(s) across normal/weak/high"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "evaluation_system output adapts across cases",
+      "passed": true,
+      "detail": "3 unique output variant(s) across normal/weak/high"
+    },
+    {
+      "section": "Step 1 - Unit Agents",
+      "name": "advice is not purely generic",
+      "passed": true,
+      "detail": "9 subject-specific weakness advice entries detected"
+    },
+    {
+      "section": "Step 2 - Personalization",
+      "name": "resource sets follow school/cbse/university mapping",
+      "passed": true,
+      "detail": "resource titles by level: {'school': ('NCERT Official', 'CBSE Academic', 'Khan Academy', 'NCERT Official', 'CBSE Academic', 'Khan Academy', 'NCERT Official', 'CBSE Academic'), 'cbse': ('NCERT Official', 'CBSE Academic', 'Khan Academy', 'NCERT Official', 'CBSE Academic', 'Khan Academy', 'NCERT Official', 'CBSE Academic'), 'university': ('MIT OpenCourseWare', 'Coursera', 'NPTEL', 'MIT OpenCourseWare', 'Coursera', 'NPTEL', 'MIT OpenCourseWare', 'Coursera')}"
+    },
+    {
+      "section": "Step 2 - Personalization",
+      "name": "university resources include advanced academic sources",
+      "passed": true,
+      "detail": "University learner receives Coursera and MIT OpenCourseWare"
+    },
+    {
+      "section": "Step 2 - Personalization",
+      "name": "CBSE resources include board context",
+      "passed": true,
+      "detail": "CBSE learner receives CBSE Academic source"
+    },
+    {
+      "section": "Step 3 - Adaptive Logic",
+      "name": "classification thresholds are correct",
+      "passed": true,
+      "detail": "classifications={'Subject C': 'weak', 'Subject B': 'moderate', 'Subject A': 'strong'}"
+    },
+    {
+      "section": "Step 3 - Adaptive Logic",
+      "name": "study time follows weakness order",
+      "passed": true,
+      "detail": "first-week hours={'Subject C': 23.4, 'Subject B': 5.25, 'Subject A': 0.75}"
+    },
+    {
+      "section": "Step 4 - Study Plan Variation",
+      "name": "daily plan signatures vary",
+      "passed": true,
+      "detail": "7/7 unique first-week signatures"
+    },
+    {
+      "section": "Step 4 - Study Plan Variation",
+      "name": "weak subject appears more frequently",
+      "passed": true,
+      "detail": "first-week frequency={'Subject A': 1, 'Subject B': 3, 'Subject C': 7}"
+    },
+    {
+      "section": "Step 5 - Risk Intelligence",
+      "name": "near exam increases risk for same score",
+      "passed": true,
+      "detail": "far=39.36, near=75.68"
+    },
+    {
+      "section": "Step 5 - Risk Intelligence",
+      "name": "risk output is explained",
+      "passed": true,
+      "detail": "reason=Physics is WEAK at 55.0% with 4 day(s) remaining.; action=Study Physics for 3 focused hours every day until the exam"
+    },
+    {
+      "section": "Step 6 - Reasoning Trace",
+      "name": "weakness_analysis trace is present and meaningful",
+      "passed": true,
+      "detail": "trace=['Ranked 3 subjects using shared PriorityEngine', 'Weakest subject is Mathematics at 52.0%', 'Moderate subjects: Computer Science', 'Strongest subject: Physics', 'Applied thresholds: <60 WEAK, 60-75 MODERATE, >75 STRONG']"
+    },
+    {
+      "section": "Step 6 - Reasoning Trace",
+      "name": "study_plan trace is present and meaningful",
+      "passed": true,
+      "detail": "trace=['Applied subject classifications from weakness analyzer', 'Allocated more hours and recurrence to WEAK subjects', 'Rotated daily subject ordering to avoid repetitive schedules', 'Reduced STRONG subjects to light weekly maintenance blocks', 'Applied 30-50% weekend boost to WEAK subjects']"
+    },
+    {
+      "section": "Step 6 - Reasoning Trace",
+      "name": "risk_assessment trace is present and meaningful",
+      "passed": true,
+      "detail": "trace=['Calculated risk from requested priority formula and low-score urgency', 'Raised risk when low score coincides with near exam date', 'Sorted subjects by highest risk first']"
+    },
+    {
+      "section": "Step 6 - Reasoning Trace",
+      "name": "resources trace is present and meaningful",
+      "passed": true,
+      "detail": "trace=['Detected learner_level as school', 'Mapped level to non-generic resource families', 'Queried synthetic knowledge base for grounded answer and sources', 'Reduced resources for STRONG subjects and expanded practice for WEAK subjects']"
+    },
+    {
+      "section": "Step 6 - Reasoning Trace",
+      "name": "career_readiness trace is present and meaningful",
+      "passed": true,
+      "detail": "trace=['Detected stream as computer science', 'Overall score 69.3% classified as MODERATE', 'Weakest subject is Mathematics', 'Adjusted actions for learner_level=school', 'School learners receive stream choices only']"
+    },
+    {
+      "section": "Step 6 - Reasoning Trace",
+      "name": "counterfactuals trace is present and meaningful",
+      "passed": true,
+      "detail": "trace=['Increasing study by 1.5 hours/day reduces risk by 41.11%', 'If Mathematics improves by 10.0 points, projected risk drops ~12.0% and plan intensity eases', 'Higher confidence (100%) enables stronger recommendations with less remediation overhead']"
+    },
+    {
+      "section": "Step 6 - Reasoning Trace",
+      "name": "critic_review trace is present and meaningful",
+      "passed": true,
+      "detail": "trace=['Reviewed report for learner L-WEAK-001 (school)', 'Canonical weakest subject: Mathematics', 'Checked cross-agent alignment, template risk, and explainability depth']"
+    },
+    {
+      "section": "Step 6 - Reasoning Trace",
+      "name": "evaluation trace is present and meaningful",
+      "passed": true,
+      "detail": "trace=['Checked agent outputs against observed behavior', 'Scored consistency 100% from cross-agent validator', 'Scored personalization 75% from degree/level/skill usage', 'Scored explainability 90% from traces and consensus visibility', 'Logged latency for 13 agent execution steps', 'Critic flaws counted: 1']"
+    },
+    {
+      "section": "Step 7 - Counterfactual",
+      "name": "increased study hours reduce risk",
+      "passed": true,
+      "detail": "current=41.35, new=24.35"
+    },
+    {
+      "section": "Step 7 - Counterfactual",
+      "name": "counterfactual explanation is present",
+      "passed": true,
+      "detail": "Increasing study by 1.5 hours/day reduces risk by 41.11%"
+    },
+    {
+      "section": "Step 8 - Critic Agent",
+      "name": "critic identifies at least one weakness",
+      "passed": true,
+      "detail": "flaws=['Study plan contains repetitive template focus lines']"
+    },
+    {
+      "section": "Step 8 - Critic Agent",
+      "name": "critic suggests improvements",
+      "passed": true,
+      "detail": "improvements=['Vary focus modes using learner profile and exam proximity']"
+    },
+    {
+      "section": "Step 9 - Evaluation System",
+      "name": "normal evaluation exposes all metrics",
+      "passed": true,
+      "detail": "metrics={'consistency_score': 100, 'explainability_score': 90, 'reasoning_quality_score': 90, 'reliability_score': 92.0, 'agent_execution_chain': [{'agent': 'Learning Path Curator', 'latency_ms': 0.01}, {'agent': 'Weakness Analyzer Agent', 'latency_ms': 2516.21}, {'agent': 'Resource Finder Agent', 'latency_ms': 2527.08}, {'agent': 'Study Planner Agent', 'latency_ms': 2524.73}, {'agent': 'Counterfactual Reasoner', 'latency_ms': 0.38}, {'agent': 'Engagement Agent', 'latency_ms': 0.06}, {'agent': 'Risk Predictor Agent', 'latency_ms': 2527.87}, {'agent': 'Assessment Agent', 'latency_ms': 0.05}, {'agent': 'Career Readiness Agent', 'latency_ms': 2522.71}, {'agent': 'Manager Insights Agent', 'latency_ms': 0.05}, {'agent': 'Consistency Validator', 'latency_ms': 0.05}, {'agent': 'Consensus Mediator', 'latency_ms': 0.08}, {'agent': 'Critic Agent', 'latency_ms': 26.05}, {'agent': 'Evaluation Agent', 'latency_ms': 8.03}], 'latency_per_agent_ms': {'Learning Path Curator': 0.01, 'Weakness Analyzer Agent': 2516.21, 'Resource Finder Agent': 2527.08, 'Study Planner Agent': 2524.73, 'Counterfactual Reasoner': 0.38, 'Engagement Agent': 0.06, 'Risk Predictor Agent': 2527.87, 'Assessment Agent': 0.05, 'Career Readiness Agent': 2522.71, 'Manager Insights Agent': 0.05, 'Consistency Validator': 0.05, 'Consensus Mediator': 0.08, 'Critic Agent': 26.05}, 'evaluator_latency_ms': 7.58, 'system_weaknesses': [], 'deductions': [], 'improvement_suggestions': ['Connect FOUNDRY_API_KEY at ai.azure.com for live Microsoft Foundry IQ retrieval', 'Record and attach demo video before June 14 submission deadline', 'Create project on innovationstudio.microsoft.com before June 14', 'Add longitudinal learner history once synthetic benchmark data is approved'], 'evidence': [], 'final_output': 'Evidence-based evaluation completed \u2014 overall 90.6/100.', 'reasoning_trace': ['Checked agent outputs against observed behavior', 'Scored consistency 100% from cross-agent validator', 'Scored personalization 75% from degree/level/skill usage', 'Scored explainability 90% from traces and consensus visibility', 'Logged latency for 13 agent execution steps', 'Critic flaws counted: 1'], 'confidence': 0.91, 'why_this_decision': 'Scores are derived from observed agent behavior, not self-congratulation.', 'rejected_options': ['Assign high scores without behavioral evidence'], 'generated_by': 'Evaluation Agent'}"
+    },
+    {
+      "section": "Step 9 - Evaluation System",
+      "name": "weak evaluation exposes all metrics",
+      "passed": true,
+      "detail": "metrics={'consistency_score': 100, 'explainability_score': 90, 'reasoning_quality_score': 90, 'reliability_score': 92.0, 'agent_execution_chain': [{'agent': 'Learning Path Curator', 'latency_ms': 0.05}, {'agent': 'Weakness Analyzer Agent', 'latency_ms': 2527.79}, {'agent': 'Resource Finder Agent', 'latency_ms': 2526.59}, {'agent': 'Study Planner Agent', 'latency_ms': 2523.02}, {'agent': 'Counterfactual Reasoner', 'latency_ms': 0.3}, {'agent': 'Engagement Agent', 'latency_ms': 0.07}, {'agent': 'Risk Predictor Agent', 'latency_ms': 2526.05}, {'agent': 'Assessment Agent', 'latency_ms': 0.04}, {'agent': 'Career Readiness Agent', 'latency_ms': 2521.85}, {'agent': 'Manager Insights Agent', 'latency_ms': 0.06}, {'agent': 'Consistency Validator', 'latency_ms': 0.05}, {'agent': 'Consensus Mediator', 'latency_ms': 0.09}, {'agent': 'Critic Agent', 'latency_ms': 25.6}, {'agent': 'Evaluation Agent', 'latency_ms': 7.81}], 'latency_per_agent_ms': {'Learning Path Curator': 0.05, 'Weakness Analyzer Agent': 2527.79, 'Resource Finder Agent': 2526.59, 'Study Planner Agent': 2523.02, 'Counterfactual Reasoner': 0.3, 'Engagement Agent': 0.07, 'Risk Predictor Agent': 2526.05, 'Assessment Agent': 0.04, 'Career Readiness Agent': 2521.85, 'Manager Insights Agent': 0.06, 'Consistency Validator': 0.05, 'Consensus Mediator': 0.09, 'Critic Agent': 25.6}, 'evaluator_latency_ms': 7.36, 'system_weaknesses': [], 'deductions': [], 'improvement_suggestions': ['Connect FOUNDRY_API_KEY at ai.azure.com for live Microsoft Foundry IQ retrieval', 'Record and attach demo video before June 14 submission deadline', 'Create project on innovationstudio.microsoft.com before June 14', 'Add longitudinal learner history once synthetic benchmark data is approved'], 'evidence': [], 'final_output': 'Evidence-based evaluation completed \u2014 overall 90.6/100.', 'reasoning_trace': ['Checked agent outputs against observed behavior', 'Scored consistency 100% from cross-agent validator', 'Scored personalization 75% from degree/level/skill usage', 'Scored explainability 90% from traces and consensus visibility', 'Logged latency for 13 agent execution steps', 'Critic flaws counted: 1'], 'confidence': 0.91, 'why_this_decision': 'Scores are derived from observed agent behavior, not self-congratulation.', 'rejected_options': ['Assign high scores without behavioral evidence'], 'generated_by': 'Evaluation Agent'}"
+    },
+    {
+      "section": "Step 9 - Evaluation System",
+      "name": "high evaluation exposes all metrics",
+      "passed": true,
+      "detail": "metrics={'consistency_score': 83.3, 'explainability_score': 90, 'reasoning_quality_score': 90, 'reliability_score': 85.1, 'agent_execution_chain': [{'agent': 'Learning Path Curator', 'latency_ms': 0.01}, {'agent': 'Weakness Analyzer Agent', 'latency_ms': 2515.56}, {'agent': 'Resource Finder Agent', 'latency_ms': 2527.45}, {'agent': 'Study Planner Agent', 'latency_ms': 2523.48}, {'agent': 'Counterfactual Reasoner', 'latency_ms': 0.37}, {'agent': 'Engagement Agent', 'latency_ms': 0.08}, {'agent': 'Risk Predictor Agent', 'latency_ms': 2528.29}, {'agent': 'Assessment Agent', 'latency_ms': 0.04}, {'agent': 'Career Readiness Agent', 'latency_ms': 2521.1}, {'agent': 'Manager Insights Agent', 'latency_ms': 0.06}, {'agent': 'Consistency Validator', 'latency_ms': 0.04}, {'agent': 'Consensus Mediator', 'latency_ms': 0.07}, {'agent': 'Critic Agent', 'latency_ms': 25.09}, {'agent': 'Evaluation Agent', 'latency_ms': 7.73}], 'latency_per_agent_ms': {'Learning Path Curator': 0.01, 'Weakness Analyzer Agent': 2515.56, 'Resource Finder Agent': 2527.45, 'Study Planner Agent': 2523.48, 'Counterfactual Reasoner': 0.37, 'Engagement Agent': 0.08, 'Risk Predictor Agent': 2528.29, 'Assessment Agent': 0.04, 'Career Readiness Agent': 2521.1, 'Manager Insights Agent': 0.06, 'Consistency Validator': 0.04, 'Consensus Mediator': 0.07, 'Critic Agent': 25.09}, 'evaluator_latency_ms': 7.26, 'system_weaknesses': [], 'deductions': [], 'improvement_suggestions': ['Connect FOUNDRY_API_KEY at ai.azure.com for live Microsoft Foundry IQ retrieval', 'Record and attach demo video before June 14 submission deadline', 'Create project on innovationstudio.microsoft.com before June 14', 'Add longitudinal learner history once synthetic benchmark data is approved'], 'evidence': [], 'final_output': 'Evidence-based evaluation completed \u2014 overall 87.3/100.', 'reasoning_trace': ['Checked agent outputs against observed behavior', 'Scored consistency 83.3% from cross-agent validator', 'Scored personalization 90% from degree/level/skill usage', 'Scored explainability 90% from traces and consensus visibility', 'Logged latency for 13 agent execution steps', 'Critic flaws counted: 2'], 'confidence': 0.87, 'why_this_decision': 'Scores are derived from observed agent behavior, not self-congratulation.', 'rejected_options': ['Assign high scores without behavioral evidence'], 'generated_by': 'Evaluation Agent'}"
+    },
+    {
+      "section": "Step 9 - Evaluation System",
+      "name": "evaluation scores vary across cases",
+      "passed": true,
+      "detail": "metric tuples={(83.3, 90, 90, 85.1), (100, 90, 90, 92.0)}"
+    },
+    {
+      "section": "Step 10 - Foundry IQ Simulation",
+      "name": "top-level synthetic IQ sources exist",
+      "passed": true,
+      "detail": "foundry_iq={'answer': 'Synthetic Foundry IQ grounding used for resource selection.', 'sources': ['Mock Board Practice Dataset', 'Mock Concept Remediation Dataset', 'Synthetic CBSE Guide', 'Synthetic Science Guide']}"
+    },
+    {
+      "section": "Step 10 - Foundry IQ Simulation",
+      "name": "subject resources include grounded answers and sources",
+      "passed": true,
+      "detail": "grounding=[{'answer': 'CBSE mathematics learners should combine NCERT examples, board-pattern questions, and concept videos. Prioritize guided practice and daily retrieval because the subject is WEAK.', 'sources': ['Synthetic CBSE Guide', 'Mock Board Practice Dataset'], 'degree': '', 'specialization': '', 'learner_level': 'school'}, {'answer': 'School physics learners should pair simulations with short derivation drills and numericals. Use balanced revision because the subject is MODERATE.', 'sources': ['Synthetic Science Guide', 'Mock Concept Remediation Dataset'], 'degree': '', 'specialization': '', 'learner_level': 'school'}, {'answer': 'School physics learners should pair simulations with short derivation drills and numericals. Use weekly spaced revision because the subject is STRONG.', 'sources': ['Synthetic Science Guide', 'Mock Concept Remediation Dataset'], 'degree': '', 'specialization': '', 'learner_level': 'school'}]"
+    },
+    {
+      "section": "Step 11 - Safety Compliance",
+      "name": "pii fails gracefully",
+      "passed": true,
+      "detail": "safety={'is_valid': False, 'issues': ['Possible PII detected; only synthetic learner data is allowed'], 'warnings': [], 'message': 'I cannot generate a reliable plan. Please provide more details.'}"
+    },
+    {
+      "section": "Step 11 - Safety Compliance",
+      "name": "pii does not hallucinate plan",
+      "passed": true,
+      "detail": "No daily schedule generated for invalid input"
+    },
+    {
+      "section": "Step 11 - Safety Compliance",
+      "name": "missing data fails gracefully",
+      "passed": true,
+      "detail": "safety={'is_valid': False, 'issues': ['No subjects supplied'], 'warnings': [], 'message': 'I cannot generate a reliable plan. Please provide more details.'}"
+    },
+    {
+      "section": "Step 11 - Safety Compliance",
+      "name": "missing data does not hallucinate plan",
+      "passed": true,
+      "detail": "No daily schedule generated for invalid input"
+    },
+    {
+      "section": "Step 11 - Safety Compliance",
+      "name": "adversarial fails gracefully",
+      "passed": true,
+      "detail": "safety={'is_valid': False, 'issues': ['Adversarial instruction detected in learner input'], 'warnings': [], 'message': 'I cannot generate a reliable plan. Please provide more details.'}"
+    },
+    {
+      "section": "Step 11 - Safety Compliance",
+      "name": "adversarial does not hallucinate plan",
+      "passed": true,
+      "detail": "No daily schedule generated for invalid input"
+    },
+    {
+      "section": "Step 12 - End-to-End",
+      "name": "full pipeline is coherent",
+      "passed": true,
+      "detail": "Weakest subject, highest risk, learner-level resources, critic, and evaluation align"
+    }
+  ],
+  "judge_scores": {
+    "Accuracy & Relevance": 24,
+    "Reasoning & Multi-step Thinking": 24,
+    "Creativity & Originality": 14,
+    "UX & Explainability": 15,
+    "Reliability & Safety": 19
+  },
+  "final_score": 96,
+  "major_issues": [
+    "No blocking QA failures after strict audit.",
+    "Residual limitation: Foundry IQ remains a synthetic simulation by design.",
+    "Residual limitation: evaluation scoring is heuristic rather than calibrated against a labeled benchmark set."
+  ],
+  "improvement_suggestions": [
+    "Connect approved live Microsoft Foundry IQ sources when credentials are available.",
+    "Add a labeled synthetic benchmark suite to calibrate evaluator scores.",
+    "Add UI dependency checks to the deployment workflow so the Streamlit demo cannot be launched without prerequisites."
+  ]
+}

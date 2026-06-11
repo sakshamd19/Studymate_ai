@@ -1,0 +1,34 @@
+{
+  "entries": [
+    {
+      "subject": "mathematics",
+      "learner_level": "cbse",
+      "answer": "CBSE mathematics learners should combine NCERT examples, board-pattern questions, and concept videos.",
+      "sources": ["Synthetic CBSE Guide", "Mock Board Practice Dataset"]
+    },
+    {
+      "subject": "physics",
+      "learner_level": "school",
+      "answer": "School physics learners should pair simulations with short derivation drills and numericals.",
+      "sources": ["Synthetic Science Guide", "Mock Concept Remediation Dataset"]
+    },
+    {
+      "subject": "computer science",
+      "learner_level": "university",
+      "answer": "University computer science learners should connect coursework to documentation, labs, and project evidence.",
+      "sources": ["Synthetic University CS Guide", "Mock Skills Dataset"]
+    },
+    {
+      "subject": "advanced",
+      "learner_level": "advanced",
+      "answer": "Advanced learners should use research papers, benchmark tasks, certification objectives, and portfolio artifacts.",
+      "sources": ["Synthetic Advanced Learning Guide", "Mock Certification Dataset"]
+    },
+    {
+      "subject": "general",
+      "learner_level": "school",
+      "answer": "School learners benefit from syllabus-aligned examples, Khan Academy explainers, and short daily practice.",
+      "sources": ["Synthetic Dataset", "Mock Guide"]
+    }
+  ]
+}
