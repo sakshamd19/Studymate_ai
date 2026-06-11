@@ -180,7 +180,6 @@ studymate_ai/
 BCA Student — PSIT College of Higher Education, Kanpur, Uttar Pradesh, India
 - GitHub: [sakshamd19](https://github.com/sakshamd19)
 - Email: sakshamdixit0319@gmail.com
-- LinkedIn: linkedin.com/in/sakshamd19
 
 **Built for:** Agents League Hackathon — AI Skills Fest 2026  
 **Track:** Reasoning Agents  
